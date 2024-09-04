@@ -131,7 +131,7 @@ function Hero() {
 
             <div className="hero flex flex-col justify-center items-center w-full mt-10 gap-8">
                 <div className="up flex flex-col justify-center items-center gap-6 mx-6 md:mx-2">
-                    <h1 className='flex justify-center items-center text-[25px] md:text-[44px] gap-4 text-center' style={{ fontFamily: "Detacher" }}
+                    <h1 className='flex justify-center items-center text-[25px] md:text-[44px] gap-4 text-center text-white' style={{ fontFamily: "Detacher" }}
                      data-aos="fade-up"
                      data-aos-duration="500">
                         <span><img src='Line (1).png' alt='' /></span>

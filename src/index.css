@@ -2,9 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 body{
- background: url(nftbg.png) no-repeat;
-   background-position: center;
-  background-size: cover;
-  height: max-content;
-  color: white;
+  color:white;
 }

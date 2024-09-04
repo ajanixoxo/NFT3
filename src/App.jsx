@@ -8,11 +8,11 @@ function App() {
  
 
   return (
-    <>
+    <main >
 
     <Hero />
     
-    </>
+    </main>
   )
 }
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Popup from './Popup'; // Import the Popup component
 
 function Hero() {
     const [isOpen, setIsOpen] = useState(false)
@@ -31,6 +32,18 @@ function Hero() {
           easing: 'ease-in-out', // Easing function
         });
       }, []);
+
+      const [showPopup, setShowPopup] = useState(false);
+
+      useEffect(() => {
+        // Show the pop-up when the component mounts
+        setShowPopup(true);
+      }, []);
+    
+      const handleClosePopup = () => {
+        setShowPopup(false);
+      };
+    
     return (
         <div>
             <nav className="nav flex justify-between items-center m-4 relative">
@@ -113,6 +126,9 @@ function Hero() {
                     </div>
                 )}
             </nav>
+                  {/* Conditionally render the pop-up */}
+      {showPopup && <Popup onClose={handleClosePopup} />}
+
             <div className="hero flex flex-col justify-center items-center w-full mt-10 gap-8">
                 <div className="up flex flex-col justify-center items-center gap-6 mx-6 md:mx-2">
                     <h1 className='flex justify-center items-center text-[25px] md:text-[44px] gap-4 text-center' style={{ fontFamily: "Detacher" }}

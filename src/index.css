@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body{
- background: url(nftbg.png) no-repeat;
+ background: url("../public/nftbg.png") no-repeat;
    background-position: center;
   background-size: cover;
   height: max-content;

@@ -127,7 +127,7 @@ function Hero() {
                 )}
             </nav>
                   {/* Conditionally render the pop-up */}
-      {/* {showPopup && <Popup onClose={handleClosePopup} />} */}
+      {showPopup && <Popup onClose={handleClosePopup} />}
 
             <div className="hero flex flex-col justify-center items-center w-full mt-10 gap-8">
                 <div className="up flex flex-col justify-center items-center gap-6 mx-6 md:mx-2">

@@ -1,0 +1,13 @@
+.box{
+  transition: 0.7s ease-in-out;
+  img{
+    width: 100% !important;
+  transition: 0.7s ease-in-out !important;
+
+  }
+}
+
+.box:nth-of-type(2){
+ 
+   z-index: 99;
+}

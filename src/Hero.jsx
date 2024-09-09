@@ -130,7 +130,7 @@ function Hero() {
       {showPopup && <Popup onClose={handleClosePopup} />}
 
             <div className="hero flex flex-col justify-center items-center w-full mt-10 gap-8">
-                <div className="up flex flex-col justify-center items-center gap-6 mx-6 md:mx-2">
+                <div className="up flex flex-col justify-center items-center gap-6 px-10 md:mx-2">
                     <h1 className='flex justify-center items-center text-[25px] md:text-[44px] gap-4 text-center text-white' style={{ fontFamily: "Detacher" }}
                      data-aos="fade-up"
                      data-aos-duration="500">
@@ -141,7 +141,7 @@ function Hero() {
                     <p className="center text-center text-[16px] md:text-[24px] font-thin text-gray-400"
                      data-aos="fade-up"
                      data-aos-duration="1000">Explore the world's premier marketplace for NFTs - where collectors meet, trade, and celebrate unique digital creations</p>
-                    <div className='flex justify-center items-center gap-4'
+                    <div className='flex justify-center items-center gap-4 w-[90%] md:w-auto'
                      data-aos="fade-up"
                      data-aos-duration="1500">
                         <svg width="185" height="64" viewBox="0 0 185 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -182,7 +182,7 @@ function Hero() {
 
                     </div>
                 </div>
-                <div className="down flex justify-between flex-col lg:flex-row items-start gap-10">
+                <div className="down flex  flex-col lg:flex-row items-start gap-10">
                     <div className="flex flex-col justify-between gap-40 "
                      data-aos="zoom-in"
                      data-aos-duration="2000">
@@ -203,11 +203,10 @@ function Hero() {
                         {images.map((image, index) => (
                             <div
                                 key={index}
-                                className={`w-[50%] box ${index === 1 ? ' left-40 absolute' : ''}`}
+                                className={`w-[40%] md:w-[50%]  box ${index === 1 ? ' left-28 md:left-40 absolute flex justify-center items-center' : ''}`}
                                 onClick={() => handleImageClick(index)}
                                   data-aos="zoom-in"
-                                 data-aos-duration="2300"
-                            >
+                                 data-aos-duration="2300">
                                 <img 
                                  data-aos="zoom-in"
                                  data-aos-duration="1000" src={image.src} alt="" />
